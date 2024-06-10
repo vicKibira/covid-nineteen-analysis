@@ -1,0 +1,13 @@
+covid-nineteen:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: root
+      password: root
+      port: 5432
+      dbname: covidnineteen # or database instead of dbname
+      schema: public
+      threads: 1
+     

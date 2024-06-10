@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: mv_stg_confirmed
+    description: Materialized view for storing confirmed cases data
+  - name: dim_confirmed
+    description: Dimension table for confirmed cases data
+  - name: mv_stg_deaths
+    description: materialized view for storing deaths data
+  - name: dim_deaths
+    description: dimension table for deaths data
+  - name: mv_stg_recovered
+    description: materialized view for recovered data
+  - name: dim_recovered
+    description: dimension table for recovered data
+  - name: mv_stg_new_cases
+    description: materialized view for new cases data
+  - name: dim_new_cases
+    description: dimension table for new cases data
+  - name: mv_stg_new_recovered
+    description: materialized view for new recovered data
+  - name: dim_new_recovered
+    description: dimension table for new recovered data
+  - name: mv_stg_deaths_per_hundred_cases
+    description: materialized view for deaths per hundred cases data
+  - name: dim_deaths_per_hundred_cases
+    description: dimension table for deaths per hundred cases data
+  - name: mv_stg_recovered_per_hundred_cases
+    description: materialized view for recovered per hundred cases data
+  - name: dim_recovered_per_hundred_cases
+    description: dimension table for recovered per hundred cases data
+  - name: mv_stg_confirmed_last_week
+    description: materialized view for confirmed last week data
+  - name: dim_confirmed_last_week
+    description: dimension table for confirmed last week data
+  - name: mv_stg_one_week_increase
+    description: materialized view for one week increase data
+  - name: dim_one_week_increase
+    description: dimension table for on week increase data
+  - name: mv_stg_who_region
+    description: materialized view for who region data
+  - name: dim_who_region
+    description: dimension table for who region data

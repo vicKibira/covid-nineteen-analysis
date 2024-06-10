@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: covid
+    database: covidnineteen
+    schema: public
+    tables:
+      - name: covid_datatable

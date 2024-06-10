@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_covid_data
+    description: "Description of the stg_covid_data model"
+    columns:
+      - name: ""
+        description: "Description of column1"
+      - name: ""
+        description: "Description of column2"
