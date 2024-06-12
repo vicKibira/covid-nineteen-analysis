@@ -24,7 +24,7 @@ cache = Cache(app.server, config={
 CACHE_TIMEOUT = 300  # Cache timeout in seconds
 
 #creating a connection to my database ,postgres for this case
-con_string = "postgresql://root:root@172.18.0.2:5432/covidnineteen"
+con_string =  "postgresql://root:root@172.21.0.2:5432/covidnineteen"
 
 #create a engine
 engine = create_engine(con_string, poolclass=NullPool)
