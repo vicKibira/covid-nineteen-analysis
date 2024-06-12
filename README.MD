@@ -1,4 +1,4 @@
-***COVID-Nineteen Analysis Dashboard**
+**COVID-Nineteen Analysis Dashboard**
 
 **Overview**
 
