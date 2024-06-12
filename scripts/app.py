@@ -224,8 +224,6 @@ contact_layout = html.Div([
     ], style={'margin': '20px auto', 'width': '50%', 'text-align': 'center'})
 ])
 
-
-
 # Make the layout
 app.layout = html.Div([
     navbar,
@@ -461,7 +459,7 @@ def plot_choropleth(n):
                      hover_data={'total_cases_confirmed': True},
                      color_continuous_scale='Viridis',  # Change the color scale here
                      title='Total COVID-19 Cases Confirmed per Country',
-                     height=500
+                     height=650
                     )
 
     # Update layout for better interactivity and aesthetics

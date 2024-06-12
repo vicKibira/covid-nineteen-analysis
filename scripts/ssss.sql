@@ -47,3 +47,42 @@ FROM dim_who_region w
 --LEFT JOIN dim_country c ON w.rn = c.rn
 LEFT JOIN dim_confirmed d ON w.rn = d.rn
 WHERE who_region = 'Europe';
+
+select * from dim_confirmed
+
+select * from dim_who_region;
+select
+	who_region as region,
+	sum(total_cases_confirmed) as total_cases_confirmed	
+from dim_confirmed d
+left join dim_who_region w on w.rn = d.rn
+group by region
+order by total_cases_confirmed desc
+
+select * from dim_deaths
+select * from dim_country
+	
+select
+	c.country as country,
+	w.who_region as region,
+	d.total_deaths as deaths
+from dim_deaths d
+left join dim_country c on d.rn = c.rn
+left join dim_who_region w on w.rn = c.rn
+group by country,deaths,region
+order by deaths desc
+
+select * from dim_one_week_change;
+
+select
+	c.country,
+	w.who_region as region,
+	d.one_week_change as one_week_change	
+from dim_who_region w
+left join dim_one_week_change d on w.rn = d.rn
+left join dim_country c on w.rn = c.rn
+group by region,one_week_change,country
+
+select * from dim_one_week_increase;
+
+select * from dim_recovered_per_hundred_cases;
