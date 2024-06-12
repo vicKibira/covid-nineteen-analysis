@@ -41,3 +41,7 @@ models:
     description: materialized view for who region data
   - name: dim_who_region
     description: dimension table for who region data
+  - name: mv_stg_country
+    description: materialized view for country data
+  - name: dim_country
+    description: dimension table for country data
